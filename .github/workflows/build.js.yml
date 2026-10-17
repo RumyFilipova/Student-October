@@ -25,7 +25,7 @@ jobs:
       run: npm test
 
   deploy_to_render:
-    needs: build_test
+    needs: build
     runs-on: ubuntu-latest
     steps:
       - name: Deploy to production
